@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./allcss.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="contain-grid">
+    <header>
+      <h1>Notes-App</h1>
+    </header>
+    <main>
+        <div class="headbar">
+            <h2>Note List</h2>
+        </div>
+        <search-bar></search-bar>
+        <note-list id="note-list" class="note-list"></note-list>
+        <note-item id="note-item" class="note-item"> </note-item>
+
+    </main>
+    <form class="container" id="container">
+      <div class="title-input">
+        <h2>Simplify Your Schedule</h2>
+      </div>
+      <div class="input">
+        <label class="Title" for="inputjudul">Title</label>
+        <input id="inputjudul" class="inputjudul" name="Title" type="text" aria-describedby="ValidationNote" required />
+
+        <label class="Description" for="inputdesc">Description</label>
+        <textarea id="inputdesc" class="inputdesc" name="Description" placeholder="describe your notes here" aria-describedby="ValidationNote"></textarea>
+        <button id="submit" class="submit" type="submit">Done</button>
+      </div>
+    </form>
+  </div>
+  <script src="./data/data.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
